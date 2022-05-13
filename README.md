@@ -7,4 +7,6 @@ script caso o usuário deseja entrar com os dados. Utilizar o formato abaixo:
 
 
 ### my_module.py
-repositório das funções criadas para resolver o problema
+repositório das funções criadas para resolver o problema.
+Contem alguns tests no final da pagina com algumas entradas. 
+
