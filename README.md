@@ -2,7 +2,7 @@
 Desafio proposto no processo seletivo da Syngenta Digital.
 
 Detalhes:
-* O desafio se trata de construir um código que retorna o hotel mais barato de acordo com as datas que o cliente desejar. Esse cliente pode ser classificado como: com ou sem fidelidade, onde há alterações no preço, assim como há alterações entre dias de semana e finais de semana.
+* O desafio se trata de construir um código que retorna o hotel mais barato de acordo com as datas que o cliente desejar. Esse cliente pode ser classificado como: com ou sem fidelidade, onde há alterações nos preços, assim como há alterações entre dias de semana e finais de semana.
 
 ### script.py 
 script caso o usuário deseja entrar com os dados. Utilizar o formato abaixo:
