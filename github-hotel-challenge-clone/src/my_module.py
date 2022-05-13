@@ -28,13 +28,13 @@ def change_string_to_dict(input_string):
     return input_dict
 
 
-# -- Essa função selecionara apenas os dados que desejamos da entrada, saber se é final de semana ou não
+
 def handle_input_data(input_dictionary):
 
     input_dict = input_dictionary
     client_type_list = list(
         input_dict.keys()
-    )  # saber se o cliente tem fidelidade ou naão
+    )  # shows the type of costumer
     new_dict = {}
 
     for i in range(len(client_type_list)):
@@ -70,7 +70,7 @@ def get_cheapest_hotel(input_dictionary):  # DO NOT change the function's name
 
     client_type_list = list(
         handled_dict.keys()
-    )  # saber se o cliente tem fidelidade ou não
+    )  # shows the costumer type
 
     week_days = (
         "mon",
@@ -78,8 +78,8 @@ def get_cheapest_hotel(input_dictionary):  # DO NOT change the function's name
         "wed",
         "thru",
         "fri",
-    )  # definir quais dias sao da semana
-    weekend = ("sat", "sun")  # quais dias sao finais de semana
+    )  
+    weekend = ("sat", "sun") 
     count_week = 0
     count_weekend = 0
 
@@ -87,7 +87,7 @@ def get_cheapest_hotel(input_dictionary):  # DO NOT change the function's name
 
         client_type = list(handled_dict.keys())[0]
 
-        # ------------------- Regular Client ----------------------
+        ''' ------------------- Regular Costumer ---------------------- '''
 
         if client_type == "Regular":
 
@@ -98,13 +98,13 @@ def get_cheapest_hotel(input_dictionary):  # DO NOT change the function's name
                 if i in week_days:
                     count_week = (
                         count_week + 1
-                    )  # contar dias de semana que será reservado
+                    )  # count of weekdays that will be reserved
 
             for j in rented_days:
                 if j in weekend:
                     count_weekend = (
                         count_weekend + 1
-                    )  # contar dias do final de semana que será reservado
+                    )  # count of weekend days that will be reserved
 
             lakewood_price = (count_week * 110) + (count_weekend * 90)
 
@@ -131,7 +131,7 @@ def get_cheapest_hotel(input_dictionary):  # DO NOT change the function's name
             cheapest_hotel = price_classification[3][0]
             return cheapest_hotel
 
-        # ------------------- Clientes com fidelidade ----------------------
+        ''' ------------------- Rewards Costumer ---------------------- '''
 
         elif client_type == "Rewards":
 
@@ -141,13 +141,13 @@ def get_cheapest_hotel(input_dictionary):  # DO NOT change the function's name
                 if i in week_days:
                     count_week = (
                         count_week + 1
-                    )  # contar dias de semana que será reservado
+                    )  
 
             for j in rented_days:
                 if j in weekend:
                     count_weekend = (
                         count_weekend + 1
-                    )  # contar dias nos finais de semana que será reservado
+                    )  
 
             lakewood_price = (count_week * 80) + (count_weekend * 80)
 
