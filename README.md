@@ -10,3 +10,7 @@ script caso o usuário deseja entrar com os dados. Utilizar o formato abaixo:
 repositório das funções criadas para resolver o problema.
 Contem alguns tests no final da pagina com algumas entradas. 
 
+
+### test.sample.py
+testes unitários para o my_module.py
+resultado do teste: Ok! 
